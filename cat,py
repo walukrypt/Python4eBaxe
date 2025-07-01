@@ -1,0 +1,22 @@
+def main():
+    number = get_number()
+    meow(5)
+    
+
+def get_number():     
+     while True:
+        n = int(input("how many times should i make the cat meow?"))
+        if n > 0 :
+           break
+     return n      
+
+
+def meow(n):
+    for _ in range(n):
+        print("meow")
+
+        if n > 5 :
+          print( "n + 1")
+
+
+main()

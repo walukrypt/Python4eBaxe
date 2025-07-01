@@ -1,0 +1,13 @@
+def main():
+    x = int(input("how good is post-wrestlemania?"))
+    if is_xfinity(x):
+        print("this wrestlemania is evenly awesome")
+    else:
+        print("this wrestlemania is odddly awesome")
+
+
+def is_xfinity(n):
+    return n % 2 == 0
+    
+main()    
+                

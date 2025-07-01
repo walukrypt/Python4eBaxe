@@ -1,0 +1,16 @@
+import os
+import shutil
+
+def Directorymatchup(directory):
+    for filename in os.listdir(directory):
+        if os.path.isfile(os.path.join(directory, filename)):
+            extension = filename.split(".")[-1].lower()
+            if extension:
+                target_dir = os.path.join(directory, extension.upper())
+                if not os.path.exists(target_dir):
+                    os.makedirs(target_dir)
+                shutil.move(
+                    os.path.join(directory, filename),
+                    os.path.join(directory, target_dir, filename)
+
+Directorymatchup("/home/majaolagunju/python4e")
